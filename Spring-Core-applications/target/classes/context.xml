@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--<bean id="customer"
+		class="com.zensar.spring_core_applications.beans.Customer"
+		init-method="myMethod" destroy-method="destroyMethod">
+			<property name="Id" value="100"></property>   values
+		passing in attribute / This is an setter injection
+		<property name="Id">
+			<value>100</value>
+		</property>   values paasing in tag 
+		<property name="name" value="Vaishali"></property>
+		<property name="address">
+			<bean class="com.zensar.spring_core_applications.beans.Address">
+				<property name="state" value="Karnataka"></property>
+				<property name="city" value="Belgum"></property>
+				<property name="pincode" value="410011"></property>
+			</bean>
+		</property>
+		<constructor-arg>
+			<value>vaishu</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>1234</value>
+		</constructor-arg>
+	</bean>-->
+	
+	<bean id="addr" class="com.zensar.spring_core_applications.beans.Address">
+		<property name="state" value="Maharashtra"></property>
+		<property name="city" value="Kolhapur"></property>
+		<property name="pincode" value="418911"></property>
+	</bean>
+	
+	<!--<bean id="customer" class="com.zensar.spring_core_applications.beans.Customer" autowire="constructor">
+		<property name="Id" value="100"></property>
+		<property name="name" value="Vaishali"></property>
+		<property name="address" ref ="address"></property>
+	</bean>-->
+
+<!--<bean id="customer" class="com.zensar.spring_core_applications.beans.Customer" p:Id="888" p:name="Radhika"></bean>
+-->
+<bean id="address" class="com.zensar.spring_core_applications.beans.Address" c:state="Maha" c:city="pune" c:pincode="434578"></bean>
+
+
+	<!--<bean id="p1" class="com.zensar.spring_core_applications.beans.Customer" parent="customer"></bean>-->
+</beans>
