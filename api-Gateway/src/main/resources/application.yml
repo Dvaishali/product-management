@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+       - id: product-service
+         uri: lb://PRODUCT-SERVICE
+         predicates:
+         - Path=/product-api/**
+       - id: coupon-service
+         uri: lb://COUPON-SERVICE
+         predicates:
+         - Path=//coupon-api/**
+    discovery:
+      enabled: true
+  application:
+    name: api-gateway-service

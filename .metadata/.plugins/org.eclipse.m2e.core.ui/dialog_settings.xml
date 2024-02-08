@@ -75,6 +75,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Training Soft\programs\coupon-service"/>
+			<item value="C:\Training Soft\programs\product-service"/>
+			<item value="C:\Training Soft\programs\Microservices Template\Microservices Template"/>
 			<item value="C:\Training Soft\programs\SpringSecurityWorkspace\spring-security-in-memory-authentication-auth"/>
 			<item value="C:\Training Soft\programs\SpringSecurityWorkspace"/>
 			<item value="C:\Training Soft\programs\SpringSecurityWorkspace\spring-security-database-authentication-auth"/>
